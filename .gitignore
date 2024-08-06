@@ -13,6 +13,7 @@ user_data/freqaimodels/*
 user_data/models/*
 user_data/notebooks/*
 !user_data/pairlist.json
+!user_data/cryptos.yaml
 freqtrade-plot.html
 freqtrade-profit-plot.html
 freqtrade/rpc/api_server/ui/*
