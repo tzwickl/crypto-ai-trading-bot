@@ -3,12 +3,12 @@ cryptos:
     ticker: BTC
     acronyms:
       - BTC
-    futures: 'BTC/USDT:USDT'
+    futures: BTC/USDT:USDT
     spot: BTC/USDT
   - name: Ether
     ticker: ETH
     acronyms:
       - ETH
       - Ethereum
-    futures: 'ETH/USDT:USDT'
+    futures: ETH/USDT:USDT
     spot: ETH/USDT
