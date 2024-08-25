@@ -574,7 +574,6 @@ def test_api_balance(botclient, mocker, rpc_balance, tickers):
         "est_stake_bot": pytest.approx(11.879999),
         "stake": "BTC",
         "is_position": False,
-        "leverage": 1.0,
         "position": 0.0,
         "side": "long",
         "is_bot_managed": True,
@@ -2157,6 +2156,7 @@ def test_api_exchanges(botclient):
         "comment": "",
         "dex": False,
         "is_alias": False,
+        "alias_for": None,
         "trade_modes": [
             {"trading_mode": "spot", "margin_mode": ""},
             {"trading_mode": "futures", "margin_mode": "isolated"},
@@ -2172,6 +2172,7 @@ def test_api_exchanges(botclient):
         "dex": False,
         "comment": "",
         "is_alias": False,
+        "alias_for": None,
         "trade_modes": [{"trading_mode": "spot", "margin_mode": ""}],
     }
     waves = [x for x in response["exchanges"] if x["classname"] == "wavesexchange"][0]
@@ -2183,6 +2184,7 @@ def test_api_exchanges(botclient):
         "dex": True,
         "comment": ANY,
         "is_alias": False,
+        "alias_for": None,
         "trade_modes": [{"trading_mode": "spot", "margin_mode": ""}],
     }
 
